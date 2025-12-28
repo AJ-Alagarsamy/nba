@@ -1,0 +1,19 @@
+Signal,Matchup,Bet,Odds,Model_Prob,Market_Prob,EV%,EV
++++,Utah Jazz @ San Antonio Spurs,Utah Jazz,800,42.5%,11.1%,282.7%,2.8268
++++,Indiana Pacers @ Miami Heat,Indiana Pacers,305,85.0%,24.7%,244.2%,2.4425
++++,Cleveland Cavaliers @ Houston Rockets,Cleveland Cavaliers,150,85.0%,40.0%,112.5%,1.125
++++,Milwaukee Bucks @ Chicago Bulls,Milwaukee Bucks,130,85.0%,43.5%,95.5%,0.955
++++,Denver Nuggets @ Orlando Magic,Denver Nuggets,-180,85.0%,64.3%,32.2%,0.3222
++++,Phoenix Suns @ New Orleans Pelicans,Phoenix Suns,-200,85.0%,66.7%,27.5%,0.275
++++,New York Knicks @ Atlanta Hawks,New York Knicks,-250,85.0%,71.4%,19.0%,0.19
++++,Dallas Mavericks @ Sacramento Kings,Dallas Mavericks,-150,70.4%,60.0%,17.3%,0.1728
++++,Brooklyn Nets @ Minnesota Timberwolves,Minnesota Timberwolves,-375,85.0%,78.9%,7.7%,0.0767
+---,Dallas Mavericks @ Sacramento Kings,Sacramento Kings,130,29.6%,43.5%,-31.9%,-0.3185
+---,Utah Jazz @ San Antonio Spurs,San Antonio Spurs,-1350,57.5%,93.1%,-38.3%,-0.3826
+---,Brooklyn Nets @ Minnesota Timberwolves,Brooklyn Nets,305,15.0%,24.7%,-39.2%,-0.3925
+---,New York Knicks @ Atlanta Hawks,Atlanta Hawks,205,15.0%,32.8%,-54.2%,-0.5425
+---,Phoenix Suns @ New Orleans Pelicans,New Orleans Pelicans,170,15.0%,37.0%,-59.5%,-0.595
+---,Denver Nuggets @ Orlando Magic,Orlando Magic,160,15.0%,38.5%,-61.0%,-0.61
+---,Milwaukee Bucks @ Chicago Bulls,Chicago Bulls,-150,15.0%,60.0%,-75.0%,-0.75
+---,Cleveland Cavaliers @ Houston Rockets,Houston Rockets,-170,15.0%,63.0%,-76.2%,-0.7618
+---,Indiana Pacers @ Miami Heat,Miami Heat,-375,15.0%,78.9%,-81.0%,-0.81

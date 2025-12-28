@@ -1,0 +1,7 @@
+Signal,Matchup,Bet,Odds,Model_Prob,Market_Prob,EV%,EV
++++,Utah Jazz @ San Antonio Spurs,Utah Jazz,800,42.5%,11.1%,282.7%,2.8268
++++,Indiana Pacers @ Miami Heat,Indiana Pacers,275,85.0%,26.7%,218.8%,2.1875
++++,Milwaukee Bucks @ Chicago Bulls,Milwaukee Bucks,164,85.0%,37.9%,124.4%,1.244
+---,Utah Jazz @ San Antonio Spurs,San Antonio Spurs,-1350,57.5%,93.1%,-38.3%,-0.3826
+---,Milwaukee Bucks @ Chicago Bulls,Chicago Bulls,-198,15.0%,66.4%,-77.4%,-0.7742
+---,Indiana Pacers @ Miami Heat,Miami Heat,-345,15.0%,77.5%,-80.7%,-0.8065

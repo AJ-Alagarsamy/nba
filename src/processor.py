@@ -67,10 +67,36 @@ class DataProcessor:
         
         return merged
 
-    def prepare_features(self, df):
-        """Selects numerical features for the model."""
-        feature_cols = ['v_pace', 'v_ortg', 'v_drtg', 'v_nrtg', 
-                        'h_pace', 'h_ortg', 'h_drtg', 'h_nrtg']
-        X = df[feature_cols]
-        y = df['home_win']
+    def prepare_features(self, data):
+        """Prepare features for model training."""
+        # Start with basic features
+        X = data[['v_pace', 'v_ortg', 'v_drtg', 'v_nrtg', 
+                  'h_pace', 'h_ortg', 'h_drtg', 'h_nrtg']].copy()
+        
+        # ADD THESE DERIVED FEATURES:
+        
+        # 1. Differences (most important)
+        X['ortg_diff'] = X['h_ortg'] - X['v_ortg']
+        X['drtg_diff'] = X['h_drtg'] - X['v_drtg']
+        X['nrtg_diff'] = X['h_nrtg'] - X['v_nrtg']
+        X['pace_diff'] = X['h_pace'] - X['v_pace']
+        
+        # 2. Ratios (offensive/defensive matchups)
+        X['h_off_eff'] = X['h_ortg'] / (X['v_drtg'] + 0.1)  # Home offense vs visitor defense
+        X['v_off_eff'] = X['v_ortg'] / (X['h_drtg'] + 0.1)  # Visitor offense vs home defense
+        
+        # 3. Net advantages
+        X['offensive_advantage'] = X['h_off_eff'] - X['v_off_eff']
+        
+        # 4. Simple averages (stability)
+        X['avg_ortg'] = (X['h_ortg'] + X['v_ortg']) / 2
+        X['avg_drtg'] = (X['h_drtg'] + X['v_drtg']) / 2
+        
+        # Target variable
+        y = data['home_win'].astype(int)
+        
+        print(f"Created {X.shape[1]} features for model training")
+        
+
+        
         return X, y
